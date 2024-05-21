@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms</title>
+    <style>
+        :root {
+            --maincolor: #2ec8a6;
+            --secondcolor: #f8a803;
+            --thirdcolor: #f4ab01;
+            --textcolor: #4A5764;
+            --medicalgreen: #d3d7d5;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            background-image: url('background-pattern-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(64, 112, 154);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 7%;
+            width: 100%;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            background-color: rgb(29, 100, 103) !important;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: var(--textcolor);
+            font-size: 1rem;
+            margin: 75px;
+            position: relative;
+            transition: 0.5s;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: var(--maincolor);
+        }
+
+        .navbar a::after {
+            content: "";
+            background-color: var(--maincolor);
+            width: 0;
+            position: absolute;
+            height: 0.2rem;
+            left: 0;
+            margin-top: 0.5rem;
+            top: 100%;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        #menu-bars {
+            color: var(--textcolor);
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin-right: 1rem;
+            display: none;
+        }
+
+        #menu-bars:hover {
+            color: var(--maincolor);
+        }
+
+        .custom-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+
+        .numa {
+            background-color: #82ccd1;
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #02070b;
+        }
+        .juba {
+            background-color: #9f1fee;
+            border: 2px solid #cb3d00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #c4c6c7;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>   <!--guys, change this according to your pages and link it-->
+            <a href="index.html">About</a>
+            <a href="about.html">Contact</a>
+            <a href="log-in-sign-up-nothing4us/src/index.html">Sign up</a>
+            <a href="#Home">FAqs</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div style="margin-left: 50px;">
+            <br><br><br><br><br>
+            <div class="numa">
+            <center><u><h1>Symptoms of Brain Stroke and how to Recognize</h1></u></center></div>
+            <h2>Introduction</h2>
+            <p>A brain stroke, also known as a cerebrovascular accident (CVA), can present with a variety of symptoms depending on the area of the brain affected and the severity of the stroke. Recognizing these symptoms early is crucial for getting prompt medical treatment, which can significantly improve outcomes. Here are the primary symptoms of a brain stroke:</p>
+            <div class="numa">
+                <h2>Sudden Numbness or Weakness</h2>
+                <ul>
+                    <li><strong>Face, Arm, or Leg:</strong> Especially on one side of the body.</li>
+                    <li><strong>Drooping Face: </strong> One side of the face may droop or feel numb. Ask the person to smile and check if the smile is uneven.
+                    </li>
+                </ul>
+                <h2>Confusion or Trouble Speaking</h2>
+                <ul>
+                    <li><strong>Sudden Confusion:</strong> Difficulty understanding speech or speaking.</li>
+                    <li><strong>Slurred Speech:</strong> Speech may become slurred or difficult to understand. Ask the person to repeat a simple sentence.</li> 
+                </ul>
+                <h2>Vision Problems</h2>
+                <ul>
+                    <li><strong>Blurred or Double Vision:</strong> Sudden trouble seeing in one or both eyes.</li>
+                    <li><strong>Loss of Vision:</strong>Sudden loss of vision in one or both eyes.</li> 
+                </ul>
+                <h2>Difficulty Walking</h2>
+                <ul>
+                    <li><strong>Dizziness:</strong> Sudden dizziness or loss of balance.</li>
+                    <li><strong>Lack of Coordination:</strong> Difficulty in walking or loss of motor coordination.</li> 
+                </ul>
+                <h2>Severe Headache</h2>
+                <ul>
+                    <li><strong>Sudden, Severe Headache:</strong> Often described as the worst headache of one's life, which may be accompanied by vomiting or altered consciousness.</li> 
+                </ul>
+            </div>
+            <br><br>
+            <h2>The FAST Acronym</h2>
+            <p>A simple way to remember the major symptoms and respond quickly is by using the acronym FAST:</p>
+            <div class="juba">
+                <table>
+                    <tr>
+                        <th>Letter</th>
+                        <th>Word</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>Face</td>
+                        <td>Ask the person to smile. Does one side of the face droop?</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Arms</td>
+                        <td>Ask the person to raise both arms. Does one arm drift downward?</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>Speech</td>
+                        <td>Ask the person to repeat a simple phrase. Is their speech slurred or strange?</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>Time</td>
+                        <td>If you observe any of these signs, call emergency services immediately. Time is critical in treating a stroke.</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <center><img src="brain.jpg" alt="Causes of Brain Stroke"></center>
+            <h2>Conclusion</h2>
+            <p>Early detection and treatment are crucial because the sooner a person receives medical treatment, the better their chances of minimizing brain damage and improving recovery outcomes. If you suspect someone is having a stroke, seek emergency medical help immediately.</p>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+</html>

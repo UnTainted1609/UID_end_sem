@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stroke Risk Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7f1; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            width: 100%;
+            font-size: 22px;
+        }
+
+        .question {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .choices {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .choices li {
+            margin-bottom: 15px;
+        }
+
+        .choices button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .result-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .home-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1><center><u>Take the quiz to know the risks</u></center></h1>
+    <div class="quiz-container">
+        <h2 class="question" id="question"></h2>
+        <ul class="choices" id="choices"></ul>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="result-container" id="result-container" style="display: none;">
+        <div class="result" id="result"></div>
+        <a href="C:\Users\rajab\OneDrive\Desktop\PetPulse\end sem\page.html" class="home-button">Go back</a>
+    </div>
+
+    <script>
+        var questions = [
+            {
+                question: "What is your age?",
+                choices: ["<55", ">55"],
+                correctAnswer: ">55"
+            },
+            {
+                question: "What is your gender?",
+                choices: ["Male", "Female", "Other"],
+                correctAnswer: "Male"
+            },
+            {
+                question: "Is there anyone in your family who has suffered a brain stroke?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Have you ever had a stroke before?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you have Hypertension?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you have diabetes?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you have any heart disease?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you suffer from obesity/have high cholesterol?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you have a history of smoking, drinking or substance use?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            },
+            {
+                question: "Do you suffer from depression, anxiety, stress or any form of psychosis?",
+                choices: ["Yes", "No"],
+                correctAnswer: "Yes"
+            }
+        ];
+
+        var currentQuestion = 0;
+        var score = 0;
+        var selectedAnswer = "";
+
+        function loadQuestion() {
+            var q = questions[currentQuestion];
+            document.getElementById("question").textContent = q.question;
+
+            var choices = document.getElementById("choices");
+            choices.innerHTML = "";
+
+            q.choices.forEach(function(choice) {
+                var li = document.createElement("li");
+                var btn = document.createElement("button");
+                btn.textContent = choice;
+                btn.onclick = function() {
+                    selectedAnswer = this.textContent;
+                    highlightSelection(this);
+                };
+                li.appendChild(btn);
+                choices.appendChild(li);
+            });
+        }
+
+        function highlightSelection(button) {
+            var buttons = document.querySelectorAll('.choices button');
+            buttons.forEach(function(btn) {
+                btn.style.backgroundColor = "";
+            });
+            button.style.backgroundColor = "lightblue";
+        }
+
+        function nextQuestion() {
+            if (selectedAnswer === questions[currentQuestion].correctAnswer) {
+                score++;
+            }
+
+            currentQuestion++;
+
+            if (currentQuestion < questions.length) {
+                selectedAnswer = ""; // Reset selected answer
+                loadQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.querySelector(".quiz-container").style.display = "none";
+            var resultText = "Your Score: " + score + "/" + questions.length;
+            if (score > 5) {
+                resultText += ". You have a higher risk of brain stroke. Please consult a doctor and take necessary prescribed precautions.";
+            } else {
+                resultText += ". You have a lower risk of brain stroke. If you feel this diagnosis is inaccurate, feel free to consult a doctor.";
+            }
+            document.getElementById("result").textContent = resultText;
+            document.getElementById("result-container").style.display = "flex";
+        }
+
+        loadQuestion();
+    </script>
+</body>
+</html>

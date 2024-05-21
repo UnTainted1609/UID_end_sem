@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk factors Page</title>
+    <style>
+        :root {
+            --maincolor: #2ec8a6;
+            --secondcolor: #f8a803;
+            --thirdcolor: #f4ab01;
+            --textcolor: #4A5764;
+            --medicalgreen: #d3d7d5;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            background-image: url('background-pattern-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(64, 112, 154);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 7%;
+            width: 100%;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            background-color: rgb(29, 100, 103) !important;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: var(--textcolor);
+            font-size: 1rem;
+            margin: 75px;
+            position: relative;
+            transition: 0.5s;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: var(--maincolor);
+        }
+
+        .navbar a::after {
+            content: "";
+            background-color: var(--maincolor);
+            width: 0;
+            position: absolute;
+            height: 0.2rem;
+            left: 0;
+            margin-top: 0.5rem;
+            top: 100%;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        #menu-bars {
+            color: var(--textcolor);
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin-right: 1rem;
+            display: none;
+        }
+
+        #menu-bars:hover {
+            color: var(--maincolor);
+        }
+
+        .custom-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+
+        .numa {
+            background-color: #82ccd1;
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #02070b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>   <!--guys, change this according to your pages and link it-->
+            <a href="index.html">About</a>
+            <a href="about.html">Contact</a>
+            <a href="log-in-sign-up-nothing4us/src/index.html">Sign up</a>
+            <a href="#Home">FAqs</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div style="margin-left: 50px;">
+            <br><br><br><br><br>
+            <div class="numa">
+            <center><u><h1>Risk Factors for Brain Stroke</h1></u></center></div>
+            <h2>Introduction</h2>
+            <p>A brain stroke, also known as a cerebrovascular accident (CVA), occurs when the blood supply to part of the brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients. Understanding the risk factors for stroke can help in prevention and management.</p>
+            <div class="numa">
+                <h2>Major Risk Factors</h2>
+                <ul>
+                    <li><strong>Age:</strong> The risk of stroke increases with age, especially after the age of 55.</li>
+                    <li><strong>Gender:</strong> Men have a higher risk of stroke compared to women, though women are more likely to die from a stroke.</li>
+                    <li><strong>Family History:</strong> If a close family member has had a stroke, your risk may be higher.</li>
+                    <li><strong>Previous Stroke or Transient Ischemic Attack (TIA):</strong> A history of stroke or TIA increases the risk of future strokes.</li>
+                    <li><strong>Hypertension:</strong> High blood pressure is a major risk factor for stroke.</li>
+                    <li><strong>Diabetes:</strong> Diabetes increases the risk of stroke due to its effects on blood vessels.</li>
+                    <li><strong>Heart Disease:</strong> Conditions such as atrial fibrillation, heart failure, and heart attack increase stroke risk.</li>
+                    <li><strong>Obesity and High Cholesterol:</strong> Excess weight and high cholesterol contribute to atherosclerosis, increasing stroke risk.</li>
+                    <li><strong>Smoking and Substance Use:</strong> Smoking and drug use can damage blood vessels and increase stroke risk.</li>
+                    <li><strong>Mental Health:</strong> Depression, anxiety, and chronic stress can indirectly increase stroke risk.</li>
+                </ul>
+            </div>
+            <br>
+            <center><img src="cuses.jpg" alt="Causes of Brain Stroke"></center>
+            <h2>Conclusion</h2>
+            <p>Being aware of the risk factors for stroke is crucial for prevention. Regular health check-ups, a healthy lifestyle, and managing existing health conditions can significantly reduce the risk of stroke.</p>
+            <br><br><br>
+            <div class="numa">
+            <center><b>You can take a small quiz to know whether you are at risk of Brain Stroke by clicking the button below:</b></center>
+            <center><a href="q2.html"><button class="custom-button">Click Me</button></a></center></div>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+</html>

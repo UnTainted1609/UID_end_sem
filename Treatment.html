@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatment page</title>
+    <style>
+        :root {
+            --maincolor: #2ec8a6;
+            --secondcolor: #f8a803;
+            --thirdcolor: #f4ab01;
+            --textcolor: #4A5764;
+        }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 7%;
+            width: 100%;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            z-index: 1000;
+            background-color: rgb(29, 100, 103) !important;
+        }
+        
+        body {
+            background-image: url("backgroung-pattern-1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+        }
+        
+        .content {
+            height: 200vh; /* Making the content tall to demonstrate scrolling */
+            padding: 20px;
+            color: aliceblue;
+        }
+        
+        .navbar a {
+            color: var(--textcolor);
+            font-size: 1.1rem;
+            margin: 100px;
+            position: relative;
+            transition: 0.5s;
+            text-align: center;
+            color: white;
+            border-left:  10px;
+        }
+        
+        .navbar a:hover {
+            color: var(--maincolor);
+        }
+        
+        .navbar a::after {
+            content: "";
+            background-color: var(--maincolor);
+            width: 0;
+            position: absolute;
+            height: 0.2rem;
+            left: 0;
+            margin-top: 0.5rem;
+            top: 100%;
+            transition: 0.5s;
+        }
+        
+        .navbar a:hover::after {
+            width: 100%;
+        }
+        
+        #menu-bars {
+            color: var(--textcolor);
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin-right: 1rem;
+            display: none;
+        }
+        
+        #menu-bars:hover {
+            color: var(--maincolor);
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:sans-serif;
+        }
+        body{
+            background-color:#fff;
+        }
+        .card-container{
+            display:flex;
+            justify-content:left;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 500px;
+
+        }
+        .card{
+            width:750px;
+            background-color:rgb(207, 219, 212);
+            border-radius:16px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+            margin:20px;
+        }
+        .card img{
+            width:100%;
+            height:auto;
+        }
+
+        .card-content{
+            padding:16px;
+        }
+        .card-content h3{
+            font-size: 30px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .card-content ol{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card-content p{
+            color:#4A5764;
+            font-size:35px;
+            line-height: 1.3;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .card-content .btn{
+            display:inline-block;
+            padding:8px 16px;
+            background-color:aliceblue;
+            text-decoration: none;
+            border-radius:4px;
+            margin-top:16px;
+            color:#fff;
+        }
+        .text p{
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration:underline;
+            color:rgb(180, 39, 39);
+            margin-top: 200px;
+        }
+        .cont p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 700px;
+            margin-left: 100px;
+            margin-top: 120px;
+
+
+        }
+        .cont img{
+            margin-left: 500px;
+            width: 1000px;
+            height: 500px;;
+        }
+        .heading p{
+            text-align: center;
+            border-top: 2200px;
+            margin-top: 100
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>   <!--guys, change this according to your pages and link it-->
+            <a href="index.html">About</a>
+            <a href="about.html">Contact</a>
+            <a href="log-in-sign-up-nothing4us/src/index.html">Sign up</a>
+            
+        </nav>
+    </header>
+    
+</body>
+
+<DIV CLASS="text">
+<p style="font-size:40px ; font-family:monospace;"> BRAIN STROKE TYPES & THEIR TREATMENTS </p>
+</DIV>
+<br>
+<DIV CLASS="cont">
+<p style="font-size:30px;">Emergency treatment depends on whether you're having an ischemic or hemorrhagic stroke. During an ischemic stroke, blood vessels in the brain are blocked or narrowed. During a hemorrhagic stroke, there's bleeding into the brain.</p>
+<br>
+<img src="img1.jpeg"; >
+</DIV>
+
+<!--Making of the different treatments-->
+    <!--image for the 1st treatment
+    <div class="card-container">
+
+        <div class="card">
+            
+        <img src="types.webp" alt="">
+        <div class="card-content">
+            <h3>card 1</h3>
+            <p>lorem ipsum</p>
+            <a href="stroke.org">READ MORE</a>
+        </div>
+    </div>-->
+
+    <br>
+    <div class="heading;">
+        <p style=" color:red;font-size: 40px;font-family:monospace; text-align: center;">TREATMENTS  AVAILABLE</p>
+    </div>
+    <br> 
+
+    <div class="card-container">
+    <div class="card">
+        <img src="Ischemicstroke.jpg" alt="">
+        <div class="card-content">
+            <h3>Treatments for Ischemic</h3>
+            <br>
+            <p>To treat an ischemic stroke, blood flow must quickly be restored to the brain. This may be done with:</p>
+            <br>
+            <ol>
+                <li>Emergency IV medicine</li>
+                <li>Emergency endovascular procedures</li>
+                <li>Removing the clot with a stent retriever.</li>
+                <li>Carotid endarterectomy.</li>
+                <li>Angioplasty and stents.</li>
+
+            </ol>
+            
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <img src="hemorragic_stroke.jpeg" alt="">
+        <div class="card-content">
+            <h3>Treatment for hemorrhagic</h3>
+            <br>
+            <p>Emergency treatment of hemorrhagic stroke focuses on controlling the bleeding and reducing pressure in the brain caused by excess fluid.</p>
+            <br>
+            <ol type="1">
+                <li>Surgical clipping</li>
+                <li>Coiling, also known as endovascular embolization.</li>
+                <li>Surgical removal of a tangle of thin-walled blood vessels.</li>
+                <li>Stereotactic radiosurgery.</li>
+                
+
+            </ol>
+        
+        </div>
+    </div>
+    </div>
+    
+    
+    
+</section>
+</html>

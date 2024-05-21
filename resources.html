@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resources
+
+    </title>
+    <style>
+        
+        :root{
+    --maincolor:#2ec8a6;
+    --secondcolor:#f8a803;
+    --thirdcolor:#f4ab01;
+    --textcolor:#4A5764;
+}
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 99%;
+            overflow: auto;
+            background-image: url("backgroung-pattern-1.png");
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.1rem 7%;
+            width: 100%;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            background-color: rgb(29, 100, 103) !important;
+        }
+        .content {
+            height: 200vh; /* Making the content tall to demonstrate scrolling */
+            padding: 20px;
+            color:aliceblue;
+            font-family: Arial, sans-serif;
+        }
+        .navbar a{
+            color: var(--textcolor);
+            font-size: 1.3rem;
+            margin: 100px;
+            position:relative;
+            transition: 0.5s;
+            text-align: center;
+            color:white;
+    
+
+}
+.navbar a:hover{
+    color: var(--maincolor);
+}
+
+.navbar a::after{
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position:absolute;
+    height: 0.2rem;
+    left:0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-bars{
+    color: var(--textcolor);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+#menu-bars:hover{
+    color: var(--maincolor);
+    
+}
+
+
+
+
+
+
+
+
+
+
+.resources {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-right:25px;
+}
+
+.resources h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resource-section {
+    margin-bottom: 20px;
+}
+
+.resource-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resource-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-section ul li {
+    margin-bottom: 10px;
+}
+
+.resource-section ul li a {
+    text-decoration: none;
+    color: #2ec8a6;
+}
+
+.resource-section ul li a:hover {
+    text-decoration: underline;
+}
+.main-review{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.review-heading{
+    text-align: center;
+}
+
+.review-heading h1{
+    font-size: 40px;
+    color: var(--maincolor);
+    padding-bottom: 3rem;
+}
+.review-inner-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+   padding: 4rem 0;
+    
+}
+.video-box{
+    flex: 1 1 300px;
+    padding: 1rem;
+    box-shadow: rgba(50, 0, 50, 0.35) 0px 5px 15px;
+    border-radius: 0 0px 0 0;
+    border: 2px solid var(--maincolor);
+    cursor: pointer;
+    transition: 1s;
+}
+.video-box:hover{
+ 
+    border-radius: 50px 0px 50px 0px;
+    
+}
+
+.video-box img{
+    border-radius: 100%;
+    width: 100px;
+    transition: 1s;
+}
+.video-box:hover img{
+    transform: scale(1.1);
+}
+.review-stars{
+    padding: 1rem 0;
+}
+.review-stars i{
+    font-size: 2rem;
+    color: var(--secondcolor);
+    margin: 0.2rem;
+}
+.video-box h2{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.video-box p{
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        
+
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>   <!--guys, change this according to your pages and link it-->
+            <a href="index.html">About</a>
+            <a href="about.html">Contact</a>
+            <a href="log-in-sign-up-nothing4us/src/index.html">Sign up</a>
+            <a href="#Home">FAqs</a>
+        </nav>
+
+        <!---<div class="right-icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <div class="btn">Make Appointment</div>
+        </div>-->
+        
+    </header>
+    <div class="main-review">
+        <section>  
+        <div class="review-heading">
+            <h1>Survivor Videos</h1>
+        </div>
+
+        <div class="main-inner-review">
+
+            <div class="review-inner-content">
+
+                <div class="video-box">
+                    <video width="320" height="240" controls>
+                        <source src="Hemorrhagic stroke survivor, Yael Shvetz, tells her story of survival and recovery.mp4" type="video/mp4">
+                        
+                      
+                      </video>
+
+                    
+
+                </div>
+
+                <div class="video-box">
+                    <video width="320" height="240" controls>
+                        <source src="Stroke Survivor, 28, Shares Symptoms And Warning Signs.mp4" type="video/mp4">
+                        
+                      
+                      </video>
+
+                   
+
+                </div>
+
+                <div class="video-box">
+                    <video width="320" height="240" controls>
+                        <source src="_Time Is Everything__ 27-Year-Old Makes Full Recovery From Stroke, Thanks to Quick Action by Doctors.mp4" type="video/mp4">
+                        
+                      
+                      </video>
+                    
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    </div>
+    <section class="resources">
+        <h2>Resources</h2>
+        <div class="resource-section">
+            <h3>Articles</h3>
+            <ul>
+                <li><a href="https://www.stroke.org/en/about-stroke" target="_blank">Understanding Stroke</a></li>
+                <li><a href="https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113" target="_blank">Stroke: Symptoms and Causes</a></li>
+                <li><a href="https://www.webmd.com/stroke/guide/stroke-treatment-care" target="_blank">Stroke Treatment and Care</a></li>
+            </ul>
+        </div>
+       
+        <div class="resource-section">
+            <h3>Support Groups</h3>
+            <ul>
+                <li><a href="https://www.stroke.org/en/stroke-support-group-registry" target="_blank">Stroke Support Group Registry</a></li>
+                <li><a href="https://www.supportgroups.com/stroke" target="_blank">Online Stroke Support Group</a></li>
+                <li><a href="https://www.americannursetoday.com/starting-stroke-support-group/" target="_blank">Starting a Stroke Support Group</a></li>
+            </ul>
+        </div>
+    </section>
+       
+   
+   
+        </body>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NeuroCare</title>
+  <style>
+     header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 7%;
+            width: 100%;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            z-index: 1000;
+            background-color: rgb(29, 100, 103) !important;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: var(--textcolor);
+            font-size: 1rem;
+            margin: 5px;
+            position: relative;
+            transition: 0.5s;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: var(--maincolor);
+        }
+
+        .navbar a::after {
+            content: "";
+            background-color: var(--maincolor);
+            width: 0;
+            position: absolute;
+            height: 0.2rem;
+            left: 0;
+            margin-top: 0.5rem;
+            top: 100%;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        #menu-bars {
+            color: var(--textcolor);
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin-right: 1rem;
+            display: none;
+        }
+
+        #menu-bars:hover {
+            color: var(--maincolor);
+        }
+    .context img{
+      margin-left: 700px;
+
+    }
+    .context h1{
+      text-align: center;
+    }
+
+    .age risk h2{
+      text-align:right;
+
+    }
+    .float-image{
+      position: absolute;
+      top:200px
+    }
+.types{
+  position:absolute;
+  top:750px;
+  height:400px;
+  width:650px;
+}
+.graph1{
+  position:relative;
+  top:-300px;
+  left:200px;
+  height:400px;
+}
+.graph2{
+  position:relative;
+  top:-400px;
+  right:510px;
+  height:400px;
+}
+.graph3{
+  position: relative;
+  top:-300px;
+  left:200px;
+  height:400px;
+
+}
+.numa {
+      background-color: #82ccd1;
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      margin: 20px 400px;
+      border-radius: 8px;
+      color: #02070b;
+      }
+    
+  </style>
+
+
+<!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Signup">Sign up</a>
+        <a href="#FAQs">FAQs</a>
+    </nav>
+</header>     
+        
+<br>
+     <!-- hero figure starts here  -->
+    <div class="container-fluid hero-figure">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content">
+            <h1>Your one stop for  everything related to <span style="color: #fff; background-color: #F7567C!important; border-radius: 25px;" id="hero-figure-text">Brain Stroke</span>.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+     <!-- hero figure ends here  -->
+
+     <!-- stat content starts here  -->
+     <div class="content" style="text-align: center;">
+      <div class="numa"><p style="font-size: 40px; font-style: italic; border-left: 100px;"><b>What is Stroke?</b></p></div>
+      <br>
+      <p style="font-size: 30px; text-align: left; margin-right: 950px; margin-left: 100px;"><b>Stroke</b> is a disease that affects the arteries leading to and within the brain. It is the No. 5 cause of death and a leading cause of disability in the United States.
+          A stroke occurs when a blood vessel that carries oxygen and nutrients to the brain is either blocked by a clot or bursts (or ruptures). When that happens, part of the brain cannot get the blood (and oxygen) it needs, so it and brain cells die.
+      </p>
+      <br>
+      <img src="what is stroke.webp" class="float-image" style="margin-top: 150px;">
+      <img src="types.jpeg" class="types" style="margin-top: 275px;">
+  </div>
+  <img src="/Users/bhavishiavenkat/Desktop/Breast-Cancer-Awareness-master/assets/media/bkrimg_for_index.avif;">
+  <br>
+  <div class="content1" style="text-align: center;">
+    <div class="numa"><p style="font-size: 40px; font-style: italic; border-left: 100px;"><b>What are the different types of strokes?</b></p></div>
+    <br>
+    <p style="font-size: 30px; text-align:left; margin-right: 900px; margin-left: 100px;">Stroke can be caused either by a clot obstructing the flow of blood to the brain (called an ischemic stroke) or by a blood vessel rupturing and preventing blood flow to the brain (called a hemorrhagic stroke). A TIA (transient ischemic attack), or "mini stroke", is caused by a temporary clot.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+     <div class="context"><div class="numa">
+            <h1>Let's Talk Statistics</h1></div>
+        <br>
+
+
+        <div class="mortality rates">
+           <h2 style="margin-left:100px"><u>Stroke Mortality Rates</u></h2>
+           <br>
+           <p style="font-size: 30px; margin-left:100px;margin-right: 800px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> stroke mortality rates are heavily influenced by the type of stroke and the speed of medical intervention. Ischemic strokes, more common than hemorrhagic strokes, generally have lower mortality rates. Quick treatment, especially within the first few hours, can significantly reduce the risk of death.</p>
+         </div>
+         <img src="graph1.jpeg" class="graph1">
+
+
+
+          <div class="age risk">
+            <h2 style="text-align: right; margin-right: 100px;"><u>Increase in the risk of Brain Stroke</u></h2>
+            <br>
+            <p style="font-size: 30px;text-align: right; margin-left: 800px;margin-right: 100px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-left:">The risk of having a stroke doubles every decade after the age of 55. Approximately 75% of all strokes occur in individuals aged 65 and older. Despite this, one in seven strokes happen in adolescents and young adults aged 15 to 49. Stroke remains a leading cause of serious, long-term disability, particularly affecting the elderly, and significantly impacts their quality of life and independence.</p>
+      <img src="graph2.jpeg" class="graph2">
+         </div>
+
+         <br>
+
+
+         <div class="frequency">
+            <h2 style="margin-left: 100px;"><u>Stroke frequency</u></h2>
+
+            <p style="font-size: 30px; margin-left:100px;margin-right: 800px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Brain strokes strike with alarming frequency,
+              A leading cause of disability and mortality with tenacity.
+              Prompt recognition and treatment are crucial for recovery,
+              Education on prevention remains a frontline strategy with efficacy.</p>
+              <img src="graph3.jpeg" class="graph3">
+          </div>
+
+         </div>
+         <br>
+
+         </div>
+         
+      </div>
+     </div>
+     <br>
+
+     
+
+</body>
+</html>

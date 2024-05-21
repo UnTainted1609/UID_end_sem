@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("WhatsApp\ Image\ 2024-05-20\ at\ 11.12.30\ PM.jpeg");
+  }
+  
+  section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h2, h3 {
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    
+  }
+  
+  
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .inputBox
+  {
+  background-color: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: black;
+    transition: all 0.3s ease;
+  }
+
+  /* Contact Section Styling */
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: black;
+    transition: all 0.3s ease;
+  }
+  
+  .box:hover {
+    box-shadow: white;
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: grey;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    line-height: 1.5;
+  }
+  
+  .contactForm {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: white;
+  }
+  
+  .inputBox {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .inputBox input, .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: gray;
+    transition: 0.3s ease;
+  }
+  
+  .inputBox input:focus, .inputBox input:valid ~ span, .inputBox textarea:focus, .inputBox textarea:valid ~ span {
+    color: black;
+    transform: translateY(-12px);
+    font-size: 20px;
+  }
+  
+  .inputBox input[type="submit"] {
+    background-color:  cornflowerblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: dotted;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .content, .container {
+      flex-direction: column;
+    }
+  
+    .container .box {
+      margin-bottom: 20px;
+    }
+  
+    .contactForm {
+      margin-top: 30px;
+    }
+  }
+  
